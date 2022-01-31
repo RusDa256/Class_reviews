@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>--Отзовик--</title>
+        </head>
+        <body>
+            <form method="post">
+            {% csrf_token %}
+            {{ form.data }}
+            <p><input type="submit"></p>
+            </form>
+
+            <p>{{ text }}</p>
+            <h2><p style="border:3px #000000  solid; width:300px;">{{ result }}</p></h2>
+
+        </body>
+    </html>
